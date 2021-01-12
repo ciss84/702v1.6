@@ -1,0 +1,158 @@
+<html manifest="cache.manifest"><head><meta charset="utf-8" /><title>Host 7.02 By Mugiwara</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="default.css"></head><body>
+<script>document.body.style.backgroundImage = "url('0.jpg')";document.cookie = "exploit=null";document.cookie = "fan=55";document.cookie = "levelTemp=55";
+var ua = navigator.userAgent;
+var fwVersion = ua.substring(ua.indexOf("5.0 (") + 19, ua.indexOf(") Apple"));
+if (fwVersion === "7.02") {
+var i = 0;
+var msg = "PlayStation 4 FW " + fwVersion + ", Compatibel With PS4HostCS";
+window.applicationCache.ondownloading = function () {
+document.getElementById("alertfw").innerHTML = '<div class="green">' + msg + "</div>";};
+window.applicationCache.onprogress = function (a) {
+document.getElementById("cache-overlay").style.display = "block";
+document.getElementById("progress").innerHTML = '<div align="center" id="myBar"></div>';
+i = Math.round(100 * (a.loaded / a.total));
+document.getElementById("myBar").style.width = i + "%";
+if (i == 0){document.getElementById("myBar").innerHTML="";} else { document.getElementById("myBar").innerHTML = i+"%";}};
+window.applicationCache.oncached = function () {
+document.getElementById("cache-overlay").style.display = "none";
+document.getElementById("alertfw").innerHTML = "";
+document.getElementById("message").innerHTML = '<div align="center" style="color:green">cache Succes</div>';
+setTimeout(function () {
+document.getElementById("message").innerHTML = '<div align="center" style="color:white">Close WebBrowser, cut l\'Internet, and Open WebBrowser</div>';
+setTimeout(function () {
+document.getElementById("message").innerHTML = "";
+},5500);},1500);};
+} else {
+var alertfirmware = Active;}
+</script>
+<script src="functions.js"></script><script>function print(){}</script> 
+<center><h2 id="title">Fw 7.02 Host v1.0 By Mugiwara</h2></center>
+<center><li><a href="credits.html" id="credits">Credits</a></li></center><hr></div></header> 
+<div id="menulist" class="container">
+<ul id="menu">
+<li id="li0"><a href="#" class="deroulant" id="deroulant0">Mira&hen</a>
+<ul class="submenu" id="submenu0">
+    <div id="hen"class="sub-item"><a href="payload702.html#f=PAYLOADS/ps4henvtx-702.js"><div class="item-subtitle2">hen 2.1.3</div></a></div>
+    <div id="hen"class="sub-item"><a href="payload702.html#f=PAYLOADS/hen213b.js"><div class="item-subtitle2">hen 2.1.3b</div></a></div>
+    <div id="hen"class="sub-item"><a href="payload702v2.html#f=PAYLOADS/ps4henvtx-702.js"><div class="item-subtitle2">hen 2.1.3 + Spoof</div></a></div>
+    <div id="hen"class="sub-item"><a href="payload702.html#f=PAYLOADS/mugimirahenv1.js"><div class="item-subtitle2">MiraHen-U</div></a></div>
+    <div id="hen"class="sub-item"><a href="payload702.html#f=PAYLOADS/mugimirahen.js"><div class="item-subtitle2">MiraHen-U-V2</div></a></div>
+</ul></li>
+<!--<li><a href="#" id="mirahen" class="submenua" onclick="load_mira(); return false">Mira+HEN</a></li>-->
+<li id="li1"><a href="#" class="deroulant" id="deroulant1">GTAV Menu</a>
+<ul class="submenu" id="submenu2">
+    <div id="gta5"class="sub-item"><a href="payload702.html#f=PAYLOADS/arabic-guy100.js"><div class="item-subtitle2">Arabic-Guy 1.00</div></a></div>
+    <div id="gta5"class="sub-item"><a href="payload702.html#f=PAYLOADS/arabic-guy127.js"><div class="item-subtitle2">Arabic-Guy 1.27</div></a></div>
+    <div id="gta5"class="sub-item"><a href="payload702.html#f=PAYLOADS/arabic-guy132.js"><div class="item-subtitle2">Arabic-Guy 1.32</div></a></div>
+    <div id="gta5"class="sub-item"><a href="payload702.html#f=PAYLOADS/BeefQueefMod.js"><div class="item-subtitle2">BeefQueef alpha Menu 1.32</div></a></div>
+</ul></li>
+<li id="li2"><a href="#" class="deroulant" id="deroulant2">App</a>
+<ul class="submenu" id="submenu1">
+    <div id="ftp"class="sub-item"><a href="payload702.html#f=PAYLOADS/FTP.js"><div class="item-subtitle2">FTP</div></a></div>
+    <div id="binloader"class="sub-item"><a href="payload702.html#f=PAYLOADS/ps4debug.js"><div class="item-subtitle2">Ps4 Debug</div></a></div>
+    <div id="binloader"class="sub-item"><a href="netcat/netcat.html"><div class="item-subtitle2">netcat</div></a></div>
+    <div id="psvr5"class="sub-item"><a href="payload702.html#f=PAYLOADS/Enable_VR.js"><div class="item-subtitle2">Enable_VR-U</div></a></div>
+    <div id="hen"class="sub-item"><a href="payload702.html#f=PAYLOADS/todex.js"><div class="item-subtitle2">ENABLE_Todex-U</div></a></div>
+    <div id="allowu"class="sub-item"><a href="payload702.html#f=PAYLOADS/spoof.js"><div class="item-subtitle2">Spoof 8.03</div></a></div>
+</ul></li>
+<li id="li3"><a href="#" class="deroulant" id="deroulant3">Dumper</a>
+<ul class="submenu" id="submenu3">
+    <div id="bgame18"class="sub-item"><a href="payload702.html#f=PAYLOADS/gdumper.js"><div class="item-subtitle2">GAME DUMPER</div></a></div>
+</li></ul>
+<li id="li4"><a href="#" class="deroulant" id="deroulant4">Backup&Restore</a>
+<ul class="submenu" id="submenu5">         
+    <div id="bdatabase"class="sub-item"><a href="payload702.html#f=PAYLOADS/DB_SG_Backup.js"><div class="item-subtitle2">BACKUP DATABASE</div></a></div>
+    <div id="rdatabase"class="sub-item"><a href="payload702.html#f=PAYLOADS/cache.js"><div class="item-subtitle2">RESTORE DATABASE</div></a></div>
+</ul></li>
+<li id="li5"><a href="#" class="deroulant" id="deroulant5">Linux</a>
+<ul class="submenu" id="submenu4">
+    <div id="linuxps4fat"class="sub-item"><a href="payload702.html#f=PAYLOADS/linux702.js"><div class="item-subtitle2">LINUX 7.02 FAT MODEL</div></a></div>
+    <div id="linuxps4pro"class="sub-item"><a href="payload702.html#f=PAYLOADS/linux702b.js"><div class="item-subtitle2">LINUX 7.02 SLIM / PRO 70XX - 71XX - 72XX</div></a></div>
+    <div id="linuxps4fat"class="sub-item"><a href="payload702.html#f=PAYLOADS/linux702.js"><div class="item-subtitle2">LINUX 3gb 7.02 SLIM / PRO 70XX - 71XX - 72XX</div></a></div>
+</ul></li>
+</ul></div>
+<div id="message" class="message"></div><hr>
+<div id="firmware"></div>
+<div class="overlay" id="cache-overlay">
+<div id="progress">
+<body onload="Populate();">
+<div id="Tpopup">
+<div id="Ticon"><img width="38" height="38" src="data:image/png;base64,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"></div>
+<div id="Ttitle">WELCOME TO X-PROJECT:</div>
+<div id="Tsubtitle"></div>
+<div id="Tbutton"><img width="28" height="25" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAISklEQVR42kSJsQ2AQAwDnaSgp2cIRqDjJUaGJejZgBU+xv8SYOnks2ylbPhjiHARcI/ugMsNZh+jWHSsYhaT9gCwkri1T7GTPNQXmVIik5D3zqyotZFo35tHALEwEAeYgTgCiP2Bmi2AWBaHOiEgVgPiECD+CMTngXgTEC8H4heELAEIIGIcEwi0vASIrVCFQaGEqRjiUTDBD8QOUFwAxLOBerqBcj9xWQQQQEx4HCEOdMDy////rgIGqRUoWP/9+wcOalDQQmhcGBYl/6DR8VcOGDXNQLF9QHPNcFkIEEC4HCMFNHAx0JAIIGYBGQzx7X8Uh4AsQ8eoDvoPDS24o6yA7C3Q9IYBAAIIWzRJAhPZGgaGv5agaGBkZAJHB7Lh5AKIYxlEgQl+LZAbDsRbkOUBAgjFMUBLpYEWzge63hIcbExM4ND4+/c/LB3A0wt+PjpgREpToBBk4ALatQTIdQXi0zA5gABiAbkWHmdMTL1Ax7jCHII7NCCO+/XrFzj4WVlZwUUBqAhAthhVPXIiB6U/cAKfATTfDYjfgsQBAohZSUkZZqEfkK4DYmZQeQILFWz49+9fDHJysgwpKUkMIiIiDB8+fGT4/v0rEP8AO46RETmk0PVDohyaxiSBbEEg3gwSAwggFohmBhagATVAPhvEd0xgQ3GB379/M3BzczO4urqA8cePnxiePXvGcPfuXYadO3cx3Lx5i+HPnz8M7OzsOM0AWQ61OwbIXADkHwMIIHA0AR0SBpQ2AbmciYmFATnqcCXEP38gWR0Ugvz8fAxcXJxAmp/Bw8Od4fLlKwxr165jOHToMAMHBwc0pDAdA00/nEBeAZB7DCCAmKBlQTAQM4JiC4SxZVlsWRgZbNmylSExMZnh9u07DIaGBgw1NVUMVlaWDD9+fMehHxJl0GrBGigmAhBAQMf8FQQyzEH1BczXhDB6nQICz58/Z3jy5DHDiRMnwHxQiBQXFzGIiYmBEzp2B8Fy1z8pIA4ECCBQyDgBHSINcy3IUcRgzDQFyUnIUSwqKsKgpaUFDR1MMyBRBQqAPyDsABBAoATsDkkrzHBJwoXXX4yQgeUQjJpTSBCavrAXEZCEDNanBBBAQMf8MwIJgkpaSDFOjGP+E+0YFhYWaEjgyhRwx0gCBBAwN/2VRc5qxBXrmIZD4h4zBL58+QpNI39xZnGoHB9AAIGyNgcs4WLLgriyNrpjQI4ARQekQYaw6Nq1a+DGGq6QQQpRZoAAAjnmLzGOgZQtf8AFHiSK/mMEN0j/o0ePgLnqCVjN5s1bGK5cuQIuixAlM07H/AMIIFDzANRUFMTmGFDQ//79B5g1fzJwcnIxKCoqMpiZmYJL2O/fv2MYzMrKwrBy5SqGTZs2gbP2z5+/gKUwG9gh3759A0cHKysbuC6D2QUr/IDgO0AAgRLwBaC4KsjXyApADgAlakVFBQYDAwNgyerBYG5uDo6GxsYmcCmLXkUICgoyODs7gR2tqqrCICUlBawqPjK8fv2a4dWrV2BP3LhxE1xtgKodUA6GpT+glS8BAogF1HAG4lBQnIPiFuKQXww6OjoMyclJDLa2NsCingts4ePHjxmWLl3GsGHDBgZtbW0Ux3z9+o3B0tKcobW1BcwHOWLNmrUMu3fvZnj37h2Dm5sbQ1tbK9jsZcuWM0ycOBEc7bBGGhA8AAggUJoBOeYTMFD4YGkC5Ijc3BxwUIMMnTZtGsORI0fBvnr16iUw6DHrG1CIvX37jmHRosVgtZcvXwKmn8dgj8jLyzHIyEiD1bGxsTF4eXkyzJ8/n+HNmzfwXgOoVwEQQKCsfRfIuAB0nB0j429wsIHSA8yy69dvMCxcuBjoi9/goAfVOXv27GN48QK1sQ9y+IEDB4Bye8AWgtRWVlYAQ9aWQU9PF564t27dBsagqAOV2KAAAJUAQPmVAAEEdAy4hlgPDB2737//gxPhkiVLGU6dOsWgqanJoKamxlBRUcYgLCwMbLuIguN606bNDJBSmwkpzfwCp5mkpCRgdFmA0xnIUZ8+fWRYsWIlw759+4ChdRlch4ESMKh5AauzgA458f8/4zWAAGKBZtNlQLoU2AKTAjkUlHauX7/OcPHiRbCFvLy84OAGqQWljS9fPjOYmJgA65wf4BABARAbFAr5+Xlg/vnz54FNiEPA9LURnGBBIQNyHCz9gUIaqZBdDvIcQAAxCwgIgNMf0CIuIHaCZXGQg0A+ANGgoARlTVD0gaIRVMSD4vvo0SNAn38G88+ePQdM4I8Y3r//wFBbW8cwa9ZscLR9/vwZHAqw7AwrV2DlFRAfB0YXqD3zDyCAGOXk5GGu4wRK7AP1GEGhAbIA1g6GNNYR2R5mKCg0QAaDQg7k6B8/foJraJBemOUwtTAzQGyQ5yChwvgMKBYOFD4CkgcIIEZZWVnk3qAxUPEOIFME5iBCVQTMpzCLkR2ODSAcAlYXCaRWwOQAAgi933QWaDyoTboOGB1coAQNchRyQsXaEUEKNWQaW5sX4nCwLmBXl2ENshqAAGIGtVvRtAGz+v9LQM1ewPzPgdxERPQoiceQUYd/UIf8hZrB0A0s3auADvoDa5SBMEAAYXMMiLgF1ADsF/83BGIpRHeWNEeB2imw5gPUQ8DCiTENGJL9QMf8Q+9jAQQQLseAwDMgBpU/gkBaE0izIsZZiAkR1IY3EBwCWp4BdMg2SPpiwujwAQQQPseAwDegBlAH6yCQzQPEvEB5fmKjCFSyAjFo5KEDlH2BBeZDyFAKdscABBCxg0VHQRhovgjQMYFAth0QqwCxBKiFBh1MAtkOale8BOJ7QAyq1lcBLb6KvcuLCQACDACTeiYYuO6IBwAAAABJRU5ErkJggg=="></div></div>
+<div class="topmask"></div>
+<h2 class="top" id="top">By Mugiwara</h2>
+<div id="xmb-contain">
+<div id="xmb">
+<li class="column" v-for="column,index in columns" v-bind:class="{active:column.active}" v-bind:style="{left:column.position.x+'px'}">
+<div class="cell" v-bind:class="{active:column.active}" v-on:click="highlightCell(column.index,0)"><ul>
+<li class="cell submenu" v-for="item,itemIndex in column.items" v-bind:class="{active:item.active}" v-bind:style="{top:item.position.y+'px'}" v-on:click="highlightCell(column.index,itemIndex)"> 
+<div class="selected">
+<div class="material-icons">{{item.icon}}</div>
+<div class="titles">{{item.title}}{{column.txt1}}<div :id="item.button1"></div>{{column.txt2}}<div :id="item.button2"></div>{{column.txt3}}</div>
+</div></a></li></ul></li></ul></div></div>
+<div align="center" id="myBar"></div></div></div><footer><div id="fanprogress" class="fanprogress"></div><div id="alertfw"></div><div id="cs-loader" class="cs-loader"><div class="cs-loader-inner"> <label></label><label></label><label></label><label></label><label></label><label></label></div></div></footer>   
+<script>
+var xpver = "";
+var appCache = window.applicationCache;
+switch (appCache.status) {
+case appCache.UNCACHED:
+cachedxp = "false";
+break;
+default:
+cachedxp = "Active";
+break;}
+function Populate() {
+payloadcount = ((document.getElementById('xmb-contain').getElementsByTagName('li').length)- 2);
+var txt = "";
+if (navigator.userAgent.substring(navigator.userAgent.indexOf("5.0 (") + 19, navigator.userAgent.indexOf(") Apple")).includes("8.03")) {txt += "Hen + Spoof 8.03 Enabled: " + "<span style='color:lime'> Active</span>" + "<br>";} else {txt += "Hen + Spoof 8.03 Enabled : " + "<span style='color:red'> false</span>" + "<br>";}
+if (navigator.onLine == false) { txt += "Lan/WiFi Enabled : " + "<span style='color:red'> false</span>" + "<br>";} else { txt += "Lan/WiFi Enabled : " + "<span style='color:lime'> Active</span>" + "<br>";}
+if (navigator.cookieEnabled === false) { txt += "Cookie Tracking : " + "<span style='color:red'> false</span>" + "<br>";} else { txt += "Cookie Tracking : " + "<span style='color:lime'> Active</span>" + "<br>";}
+if (cachedxp === "false") { txt += "Host Cached : " + "<span style='color:red'>" + cachedxp + "</span>" + "<br><br>";} else { txt += "Host Cached : " + "<span style='color:lime'>" + cachedxp + "</span>" + "<br><br>";}
+document.title = xpver;
+document.getElementById("xmb").getElementsByClassName("material-icons")[0].click();
+document.getElementById('infoz').innerHTML = txt;
+document.getElementById("xmb").getElementsByClassName("material-icons")[0].style.color = "firebrick";
+document.getElementById("xmb").getElementsByClassName("material-icons")[payloadcount].style.color = "gold";
+document.getElementById("xmb").getElementsByClassName("material-icons")[payloadcount-9].style.color = "lime";	
+if (localStorage.getItem("ipanel") === null) {
+document.getElementById("infoz").style.display = "block";
+} else if (localStorage.getItem("ipanel") === "on" ) {
+document.getElementById("infoz").style.display = "block";
+} else {
+hideMe();}
+if (localStorage.getItem("Debug") === "on") {
+document.getElementsByTagName("UL")[0].getElementsByTagName("LI")[payloadcount].style.display = "block";
+myNum = 15;
+}
+if (cachedxp === "Active") {
+} else {
+xmbVue.handleKey('x', 12); //move to cache column (12)	
+}
+document.getElementById('clock').innerHTML = new Date();
+document.getElementById('clock').innerHTML = document.getElementById('clock').innerHTML.slice(0,21);
+}		
+var i = setInterval(function() {
+document.getElementById('clock').innerHTML = new Date();
+document.getElementById('clock').innerHTML = document.getElementById('clock').innerHTML.slice(0,21);
+},5500);
+function hideMe() {
+var y = document.getElementById("infoz");
+if (y.style.display === "none") { 
+y.style.display = "block";
+localStorage.setItem("ipanel", "on");
+document.getElementById("hide").innerHTML = "&nbsp;&nbsp;&nbsp;HIDE INFO";
+document.getElementById("show").innerHTML = "";
+document.getElementById("hide").style.fontSize = "15px";
+} else {
+localStorage.setItem("ipanel", "off");
+document.getElementById("hide").innerHTML = xpver;
+document.getElementById("hide").style.fontSize = "27px";
+document.getElementById("show").innerHTML = "&nbsp;&nbsp;&nbsp;SHOW INFO";
+y.style.display = "none";
+}
+}
+</script><script src="style.js">
+</script><h3 class="infoz" id="infoz">X-PROJECT LOADING..</h3><h3 class="hide" id="hide" onclick='hideMe()'>&nbsp;&nbsp;&nbsp;HIDE INFO</h3><h1 class="hide" id="show" onclick='hideMe()'></h1></body></html>

@@ -1,5 +1,7 @@
 CACHE MANIFEST 
 0.jpg
+c-code.js
+c-code1.js
 credits.html
 default.css
 index.html
@@ -24,6 +26,7 @@ PAYLOADS\hen213b.js
 PAYLOADS\linux702-3gb.js
 PAYLOADS\linux702.js
 PAYLOADS\linux702b.js
+PAYLOADS\mugihen.js
 PAYLOADS\mugimirahen.js
 PAYLOADS\mugimirahenv1.js
 PAYLOADS\ps4debug.js
